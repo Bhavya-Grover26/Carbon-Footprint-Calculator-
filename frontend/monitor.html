@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/monitor.css'%}">
+{% include 'accounts./navbar.html' %}
+
+{% block content %}
+
+{% endblock %}
+<div class="wrapper">
+    <canvas id='c'></canvas>
+    <div class="label">text</div>
+  </div>
+  <p>Your Results</p>
+{% block js_block %}
+<script type="text/javascript" src="{%static 'js/monitor.js'%}"></script>
+{% endblock %}
